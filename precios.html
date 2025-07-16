@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- Indica que el documento es HTML5 -->
+<html lang="es"> <!-- Establece el idioma del contenido como español -->
+
+<head>
+  <meta charset="UTF-8" /> <!-- Codificación de caracteres UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Permite diseño responsivo en móviles -->
+  <title>Precios - Fritz REUTER</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="styles.css" /> <!-- Enlace al archivo CSS externo -->
+</head>
+
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header class="header-principal">
+    <div class="header-container"> <!-- Contenedor interno del encabezado -->
+
+      <div class="logo-grande"> <!-- Contenedor para el logotipo -->
+        <img src="img/logo.png" alt="Fritz REUTER logo" /> <!-- Imagen del logo -->
+      </div>
+
+      <!-- Botón tipo hamburguesa para navegación móvil -->
+      <input type="checkbox" id="menu-toggle" /> <!-- Checkbox oculto para alternar el menú -->
+      <label for="menu-toggle" class="menu-icon">☰</label> <!-- Icono visible del menú (hamburguesa) -->
+
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <nav class="nav-derecha">
+        <ul> <!-- Lista de enlaces de navegación -->
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
+          <li><a href="precios.html">Precios</a></li> <!-- Página actual -->
+          <li><input type="search" placeholder="Buscar..." /></li> <!-- Campo de búsqueda -->
+        </ul>
+      </nav>
+
+    </div> <!-- Fin de header-container -->
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container">
+
+    <!-- SECCIÓN DE INTRODUCCIÓN -->
+    <section class="hero-content" style="padding: 3rem 1rem 1rem;"> <!-- Espaciado personalizado -->
+      <h1>Ataúdes y Precios</h1> <!-- Título de la sección -->
+      <p style="text-align:center; max-width: 700px; margin: auto;">
+        Conoce nuestros modelos de ataúdes disponibles, con detalles de lujo, materiales de alta calidad y un precio justo para cada necesidad.
+      </p> <!-- Texto descriptivo con estilo inline -->
+    </section>
+
+    <!-- FILTROS DE PRODUCTOS -->
+    <div class="filtros"> <!-- Contenedor del filtro -->
+      <select><option>Marca</option></select> <!-- Filtro de marca -->
+      <select><option>Estado</option></select> <!-- Filtro de estado -->
+      <select><option>Precio</option></select> <!-- Filtro de precio -->
+      <select><option>Pago</option></select> <!-- Filtro de tipo de pago -->
+    </div>
+
+    <!-- CATÁLOGO DE PRODUCTOS DESTACADOS -->
+    <div class="productos-precio"> <!-- Contenedor de productos destacados -->
+
+      <!-- Primer producto -->
+      <article class="producto">
+        <img src="img/ataud1.jpg" alt="Ataúd Emporium Calibre 18" />
+        <h3>Ataúd Emporium Calibre 18</h3>
+        <p>S/ 5,814.57</p>
+        <button>Guardar</button> <!-- Botón para guardar el producto -->
+        <button>🤍</button> <!-- Botón para agregar a favoritos -->
+      </article>
+
+      <!-- Segundo producto -->
+      <article class="producto">
+        <img src="img/ataud2.jpg" alt="Ataúd Plateado Slim" />
+        <h3>Ataúd Plateado Slim</h3>
+        <p>S/ 3,277.30</p>
+        <button>Guardar</button> <!-- Botón para guardar el producto -->
+        <button>🤍</button> <!-- Botón para agregar a favoritos -->
+      </article>
+
+    </div> <!-- Fin del catálogo de productos -->
+
+  </main> <!-- Fin del contenido principal -->
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 Fritz REUTER - Todos los derechos reservados.</p> <!-- Derechos de autor -->
+  </footer>
+
+</body>
+</html>

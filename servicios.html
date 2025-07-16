@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Establece el idioma del contenido como español -->
+
+<head>
+  <meta charset="UTF-8" /> <!-- Especifica la codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Permite diseño responsivo, ajustando la página a dispositivos móviles -->
+  <title>Servicios - Fritz REUTER</title> <!-- El título que aparecerá en la pestaña del navegador -->
+  <link rel="stylesheet" href="styles.css" /> <!-- Enlace al archivo CSS externo para el diseño de la página -->
+  <script src="https://unpkg.com/lucide@latest"></script> <!-- Carga la librería para los iconos de Lucide -->
+</head>
+
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header class="header-principal">
+    <div class="header-container"> <!-- Contenedor que organiza los elementos del encabezado -->
+
+      <div class="logo-grande"> <!-- Contenedor del logo -->
+        <img src="img/logo.png" alt="Fritz REUTER logo" /> <!-- Imagen del logotipo de la empresa -->
+      </div>
+
+      <!-- Botón hamburguesa (input + label) para la navegación en dispositivos móviles -->
+      <input type="checkbox" id="menu-toggle" /> <!-- Checkbox oculto que alterna el menú de navegación -->
+      <label for="menu-toggle" class="menu-icon">☰</label> <!-- Icono de hamburguesa visible que activa el menú al hacer clic -->
+
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <nav class="nav-derecha">
+        <ul> <!-- Lista de enlaces de navegación -->
+          <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página principal -->
+          <li><a href="servicios.html">Servicios</a></li> <!-- Enlace a la página de servicios (página actual) -->
+          <li><a href="accesorios.html">Accesorios</a></li> <!-- Enlace a la página de accesorios -->
+          <li><a href="precios.html">Precios</a></li> <!-- Enlace a la página de precios -->
+          <li><input type="search" placeholder="Buscar..." /> <!-- Campo de búsqueda -->
+        </ul>
+      </nav>
+
+    </div> <!-- Fin del contenedor del encabezado -->
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container">
+
+    <!-- SECCIÓN DE INTRODUCCIÓN DE SERVICIOS -->
+    <section class="hero-content" style="padding: 3rem 1rem 1rem;"> <!-- Espaciado interno personalizado para la sección -->
+      <h1>Planes Funerarios</h1> <!-- Título de la sección -->
+      <p style="text-align:center; max-width: 700px; margin: auto;"> <!-- Descripción centrada -->
+        Ofrecemos tres niveles de servicio adaptados a las necesidades de cada familia. Todos nuestros planes están diseñados con respeto, calidad y acompañamiento.
+      </p>
+    </section>
+
+    <!-- CONTENEDOR DE TARJETAS PARA LOS PLANES -->
+    <div class="cards-container">
+
+      <!-- PLAN VIP -->
+      <article class="card">
+        <i data-lucide="crown"></i> <!-- Icono de corona de Lucide (representa lujo y exclusividad) -->
+        <h3>Plan VIP</h3> <!-- Título del plan -->
+        <ul> <!-- Lista de servicios incluidos en el plan -->
+          <li>Traslado del cuerpo</li>
+          <li>Preparación profesional</li>
+          <li>Coche de flores</li>
+          <li>Carroza de lujo</li>
+        </ul>
+      </article>
+
+      <!-- PLAN LUJO -->
+      <article class="card">
+        <i data-lucide="medal"></i> <!-- Icono de medalla de Lucide (representa un plan superior) -->
+        <h3>Plan Lujo</h3> <!-- Título del plan -->
+        <ul> <!-- Lista de servicios del plan -->
+          <li>Todo lo del Plan VIP</li> <!-- Hereda todos los servicios del Plan VIP -->
+          <li>Transmisión en vivo</li>
+          <li>Asesor personalizado</li>
+        </ul>
+      </article>
+
+      <!-- PLAN SUPERIOR -->
+      <article class="card">
+        <i data-lucide="diamond"></i> <!-- Icono de diamante de Lucide (representa el plan más exclusivo) -->
+        <h3>Plan Superior</h3> <!-- Título del plan -->
+        <ul> <!-- Lista de servicios del plan -->
+          <li>Todo lo del Plan Lujo</li> <!-- Hereda todos los servicios del Plan Lujo -->
+          <li>Flores adicionales</li>
+          <li>Vehículo de acompañamiento</li>
+        </ul>
+      </article>
+
+    </div> <!-- Fin del contenedor de tarjetas -->
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 Fritz REUTER - Todos los derechos reservados.</p> <!-- Derechos de autor -->
+  </footer>
+
+  <!-- Script para inicializar los iconos de Lucide -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
